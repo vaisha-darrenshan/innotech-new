@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 div.tippy-box[data-animation="fade"][data-state="hidden"] {
   opacity: 0;
 }
@@ -91,4 +97,40 @@ div.tippy-box[data-inertia][data-state="visible"] {
   text-align: left;
   color: #fff;
   box-shadow: none;
+}
+#testimonials {
+  background-color: transparent;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.testimonial {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1.2em; /* Increase the size as needed */
+}
+
+.testimonial h4 {
+  text-align: right;
+  color: #3498db;
+  font-size: 1.2em; /* Increase the size as needed */
 }
