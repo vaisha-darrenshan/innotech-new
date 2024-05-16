@@ -55,7 +55,7 @@
   
   <header>
     <nav>
-      <p class="logo bold"><img src="images/skl.png" alt="School_logo" class="logo-img"></p>
+      <p class="logo bold"><img src="images/skl.png" alt="School_logo" class="logo-img" style="width: 200px;"></p>
       <ul>
         <li><a class="demo-button" href="#ai_policy">AI Policy</a></li>
         <li><a href="#about">About</a></li>
@@ -78,16 +78,44 @@
         <a class="demo-button hero-button"><i class="fas fa-eye"></i>Know More</a>
       </div>
       
-        <div class="promo-img" >
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/945334183?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 1%;" title="SampleVideo_1280x720_1mb"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
       
     </div>
   </div>
-  <section class="become-a-css-pro explainer" id="features" >
+
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6" style="max-width: 1080px; margin-top: 200px;"> <!-- Increase this value to make the video bigger -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <video id="myVideo" class="embed-responsive-item" autoplay muted>
+              <source src="media/Innotech Initiatives.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      var video = document.getElementById("myVideo");
+    
+      video.addEventListener('mouseover', function() {
+        video.pause();
+      });
+    
+      video.addEventListener('mouseout', function() {
+        video.play();
+      });
+    </script>
+  <section id="about" class="become-a-css-pro explainer" id="features" >
     <div class="sub-explainer"></div>
     <div class="limited-width">
-      <h2 id="about">Motto</h2>
+      <h2  style=" font-size: 4em; 
+      font-weight: bold; 
+      color: #3498db; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background: -webkit-linear-gradient(#3498db, #2ecc71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Motto</h2>
       <p class="big-p">
         <div class="div">
         <span class="cta-wrapper">
@@ -172,36 +200,85 @@
         </ul>
       </div>
     </div>
-
     <div class="sub-explainer"></div>
-    <section id="testimonials">
-      <div class="container text-center" data-aos="fade-up">
-        <h2 class="section-title mb-4" style="margin-top: -150px;">Testimonials</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card bg-transparent border-0 mb-4">
-              <div class="card-body">
-                <p class="card-text big-text text-light">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card bg-transparent border-0 mb-4">
-              <div class="card-body">
-                <p class="card-text big-text text-light">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card bg-transparent border-0 mb-4">
-              <div class="card-body">
-                <p class="card-text big-text text-light">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-              </div>
-            </div>
-          </div>
+
+    <h1 class="text-center mt-5" style="
+      font-size: 2.5em; 
+      font-weight: bold; 
+      color: #3498db; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background: -webkit-linear-gradient(#3498db, #2ecc71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    ">Testimonials</h1>
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+        </blockquote>
+        <h3>Wisteria Ravenclaw</h3>
+        <h4>Google Inc.</h4>
+      </figcaption>
+    </figure>
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+        </blockquote>
+        <h3>Ursula Gurnmeister</h3>
+        <h4>Facebook</h4>
+      </figcaption>
+    </figure>
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+        </blockquote>
+        <h3>Ingredia Nutrisha</h3>
+        <h4>Twitter</h4>
+      </figcaption>
+    </figure>
+    <div id="ai_policy" class="sub-explainer" style="margin-top: 250px;"></div>
+   
+    <div class="container">
+      <h1  class="text-center"><span style="color: #007bff; font-size: 1.5em; 
+        font-weight: bold; 
+        color: #3498db; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background: -webkit-linear-gradient(#3498db, #2ecc71);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">AI Policy</span></h1>
+    
+      
+        <div class="policy-section">
+          <h2 class="section-title"><span style="color: #007bff;">Overview</span></h2>
+          <p><strong>This policy outlines the guidelines for using artificial intelligence (AI) in our school, Gems Our Own Indian School.</strong> Our school recognises technology's benefits; to maintain academic integrity, we must comply with plagiarism and exam malpractice guidelines. Additionally, pupil well-being and safe internet use are at the forefront of our considerations. We are also committed to developing our pupils' IT skills and curiosity about the world.</p>
+        </div>
+      
+        <div class="policy-section">
+          <h3 class="subsection-title"><span style="color: #007bff;">Use of AI for Academic Purposes</span></h3>
+          <p><strong>AI can be used as an aid for academic purposes, such as research, homework, and assignments.</strong> However, it is essential to note that students should not solely rely on AI to complete their work. AI must align with academic integrity guidelines, and students must cite the sources used. Teachers and staff should monitor the use of AI and provide guidance where necessary.</p>
+          <p><strong>AI chatbots should only be used as supplementary educational tools for enhancing learning and understanding, not as a replacement for independent thought or original work.</strong> Students should refer to the course syllabus for specific guidelines on using generative tools in a particular course. Students should seek guidance from their teachers to ensure ethical and responsible use of AI tools in their academic work. Students must acknowledge and provide proper citations for any AI-generated content used in their assignments or projects.</p>
+        </div>
+      
+        <div class="policy-section">
+          <h3 class="subsection-title"><span style="color: #007bff;">Plagiarism and Copyright Infringement</span></h3>
+          <p><strong>The use of AI must not result in plagiarism or copyright infringement.</strong> Students must understand the concept of plagiarism and be able to use AI ethically. Teachers and staff must educate students on using AI without violating plagiarism guidelines and copyright laws.</p>
+          <p><strong>Students are expected to use AI ethically. This means that AI should not be harmful, discriminatory, or misleading. Students should not use AI to spread false information or engage in plagiarism, cheating, or unauthorized assistance on assessments or assignments.</strong></p>
+        </div>
+      
+        <div class="policy-section">
+          <h3 class="subsection-title"><span style="color: #007bff;">Prohibition of AI During Exams</span></h3>
+          <p><strong>AI must not be used during exams, as this constitutes exam malpractice.</strong> Students must refrain from using AI to answer exam questions or seek assistance during the exam. Teachers and staff should ensure that students are aware of this policy and the consequences of violating it.</p>
+        </div>
+      
+        <div class="policy-section">
+          <p><strong>Our school recognises the benefits of using AI in education and is committed to providing our students with a safe and supportive learning environment.</strong> The guidelines outlined in this policy are in place to ensure academic integrity, safeguard students, and maintain ethical standards. Violations of this policy may result in academic penalties or disciplinary actions. By promoting responsible AI use, we aim to equip our students with the necessary skills and values to navigate the evolving technological landscape ethically and responsibly.</p>
         </div>
       </div>
-    </section>
+      
+    
+    
     
   </footer>
   <div class="loading-demo"><img src="images/spinner.svg" alt="Loading spinner" width="15px" height="15px" style="vertical-align: text-bottom; padding-right: 5px;"> Loading demo... Please wait</div>
