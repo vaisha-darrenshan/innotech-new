@@ -57,9 +57,11 @@
     <nav>
       <p class="logo bold"><img src="images/skl.png" alt="School_logo" class="logo-img" style="width: 200px;"></p>
       <ul>
+        <li><a class="demo-button" href="#research">Research material</a></li>
         <li><a class="demo-button" href="#ai_policy">AI Policy</a></li>
         <li><a href="#about">About</a></li>
         <li class="buy-button"><a href="#home">Home</a></li>
+
       </ul>
     </nav>
   </header>
@@ -109,13 +111,7 @@
   <section id="about" class="become-a-css-pro explainer" id="features" >
     <div class="sub-explainer"></div>
     <div class="limited-width">
-      <h2  style=" font-size: 4em; 
-      font-weight: bold; 
-      color: #3498db; 
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      background: -webkit-linear-gradient(#3498db, #2ecc71);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;">Motto</h2>
+      <h1  style=" font-size: 4em;">Motto</h1>
       <p class="big-p">
         <div class="div">
         <span class="cta-wrapper">
@@ -161,7 +157,7 @@
 
         new ScrollMagic.Scene({
           triggerElement: '#bulb', // change this to the id of your trigger element
-          triggerHook: 0.2 // change this to the point at which you want the bulb to turn off (0 is the top of the viewport, 1 is the bottom)
+          triggerHook: 1 // change this to the point at which you want the bulb to turn off (0 is the top of the viewport, 1 is the bottom)
         })
         .on('enter', function () {
           document.getElementById('bulb-img').src = 'images/bulboff.png'; // change the bulb to the off image
@@ -170,7 +166,7 @@
 
         new ScrollMagic.Scene({
           triggerElement: '#bulb', // change this to the id of your trigger element
-          triggerHook: 0.5 // change this to the point at which you want the bulb to turn on (0 is the top of the viewport, 1 is the bottom)
+          triggerHook: 0.4 // change this to the point at which you want the bulb to turn on (0 is the top of the viewport, 1 is the bottom)
         })
         .on('enter', function () {
           document.getElementById('bulb-img').src = 'images/bulbon.png'; // change the bulb to the on image
@@ -202,15 +198,7 @@
     </div>
     <div class="sub-explainer"></div>
 
-    <h1 class="text-center mt-5" style="
-      font-size: 2.5em; 
-      font-weight: bold; 
-      color: #3498db; 
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      background: -webkit-linear-gradient(#3498db, #2ecc71);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    ">Testimonials</h1>
+    <h1 class="text-center mt-5">Testimonials</h1>
     <figure class="snip1533">
       <figcaption>
         <blockquote>
@@ -241,13 +229,7 @@
     <div id="ai_policy" class="sub-explainer" style="margin-top: 250px;"></div>
    
     <div class="container">
-      <h1  class="text-center"><span style="color: #007bff; font-size: 1.5em; 
-        font-weight: bold; 
-        color: #3498db; 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        background: -webkit-linear-gradient(#3498db, #2ecc71);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;">AI Policy</span></h1>
+      <h1  class="text-center">AI policy</h1>
     
       
         <div class="policy-section">
@@ -276,9 +258,26 @@
           <p><strong>Our school recognises the benefits of using AI in education and is committed to providing our students with a safe and supportive learning environment.</strong> The guidelines outlined in this policy are in place to ensure academic integrity, safeguard students, and maintain ethical standards. Violations of this policy may result in academic penalties or disciplinary actions. By promoting responsible AI use, we aim to equip our students with the necessary skills and values to navigate the evolving technological landscape ethically and responsibly.</p>
         </div>
       </div>
-      
-    
-    
+      <div  id="research" class="sub-explainer" style="margin-top: 150px;"></div>
+    <div  class="container mt-5">
+      <h1 class="text-center">Welcome Technology Enthusiasts!</h1>
+      <p class="text-center">Here are some resources to get you started with coding:</p>
+      <ul>
+        <li><a  class="button-cta" href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a class="button-cta" href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+        <li><a class="button-cta" href="https://getbootstrap.com" target="_blank">Bootstrap</a></li>
+        <li><a class="button-cta" href="https://tailwindcss.com" target="_blank">Tailwind CSS</a></li>
+        <li><a class="button-cta" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+      </ul>
+      <h2 class="mt-5 text-center">Research Papers</h2>
+      <p class="text-center">Here are some research papers to deepen your understanding:</p>
+      <ul>
+        <!-- Replace '#' with the actual links to the research papers -->
+        <li><a href="#" target="_blank"><button class="button-28" role="button">Research Paper 1</button></a></li>
+        <li><a href="#" target="_blank"><button class="button-28" role="button">Research Paper 2</button></a></li>
+        <li><a href="#" target="_blank"><button class="button-28" role="button">Research Paper 3</button></a></li>
+      </ul>
+    </div>
     
   </footer>
   <div class="loading-demo"><img src="images/spinner.svg" alt="Loading spinner" width="15px" height="15px" style="vertical-align: text-bottom; padding-right: 5px;"> Loading demo... Please wait</div>

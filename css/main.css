@@ -103,7 +103,7 @@ div.tippy-box[data-inertia][data-state="visible"] {
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 .snip1533 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: #9e9e9e;
+  color: #fff; /* Change text color to white */
   display: inline-block;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
@@ -113,7 +113,7 @@ div.tippy-box[data-inertia][data-state="visible"] {
   position: relative;
   text-align: center;
   width: 100%;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #244655, #333333); /* Change background to dark gradient */
   border-radius: 5px;
   border-top: 5px solid #028AEF;
 }
@@ -149,7 +149,7 @@ div.tippy-box[data-inertia][data-state="visible"] {
 }
 
 .snip1533 h3 {
-  color: #3c3c3c;
+  color: #fff; /* Change heading color to white */
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
@@ -210,4 +210,70 @@ div.tippy-box[data-inertia][data-state="visible"] {
 .policy-section ol, .policy-section ul {
   padding-left: 20px;
   list-style: none;
+}
+
+.cool-border {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  transition: border 0.3s ease, color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  margin: 10px; /* Add this line */
+}
+
+.cool-border:hover {
+  border: 1px solid red;
+  color: whitesmoke;
+}
+
+
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: #E4ECF1;
+  opacity: 50%;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25%;
+  will-change: transform;
+  margin-bottom: 10px;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  opacity: 100%;
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
