@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+p {
+  font-family: "Reddit Sans", sans-serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 
+  background-color: #252528;
+
+}
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +23,7 @@ div.tippy-box[data-animation="fade"][data-state="hidden"] {
 [data-tippy-root] {
   max-width: calc(100vw - 10px);
 }
+
 
 div.tippy-box {
   position: relative;
@@ -101,6 +114,14 @@ div.tippy-box[data-inertia][data-state="visible"] {
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+
+
+header {
+  backdrop-filter: blur(10px);}
+
+
+
 .snip1533 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #fff; /* Change text color to white */
