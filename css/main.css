@@ -4,6 +4,7 @@
 p {
   font-family: "Reddit Sans", sans-serif;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -297,4 +298,40 @@ header {
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+@media (max-width: 712px) {
+  #myVideo {
+      margin-top: 75px; /* Decrease this value to make the video larger */
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light grey border */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333; /* Dark grey text color */
+  padding: 10px 15px; /* Less padding for the links */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Display links as block elements */
+}
+
+.dropdown-content a:hover {
+  background-color: #f6f6f6; 
+  color: #ddd;/* Light grey background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

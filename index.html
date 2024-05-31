@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en" style="--scrollbar-width: 0px;"><head>
   <meta charset="utf-8">
-  <title>Inno Tech Council</title>
+  <title>Inno-Tech Council</title>
   <link rel="preload" as="font" href="css/webfonts/38F6FD_0_0.woff2">
   <link rel="preload" as="font" href="css/webfonts/38F6FD_1_0.woff2">
   <link rel="preload" as="font" href="css/webfonts/CerebriSans-SemiBold.woff2">
@@ -8,6 +8,7 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -25,9 +26,9 @@
   <link rel="stylesheet" href="css/new.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="images/inno.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/inno.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/inno.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/inno2.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/inno2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/inno2.png">
   <link rel="manifest" href="site.webmanifest">
 
   <meta name="description" >
@@ -55,10 +56,20 @@
   
   <header data-aos="fade-down">
     <nav>
-      <p class="logo bold"><img src="images/skl.png" alt="School_logo" class="logo-img" style="width: 200px;"></p>
+      <p class="logo bold"><img src="images/skl.png" alt="School_logo" class="logo-img" style="width: 225px;"></p>
       <ul>
         <li><a class="demo-button" href="#research">Research material</a></li>
-        <li><a class="demo-button" href="#ai_policy">AI Policy</a></li>
+        <li class="dropdown">
+            <a class="demo-button" href="#aiPolicy">
+                Policies &#9662; <!-- Unicode down arrow -->
+            </a>
+            <div class="dropdown-content">
+                <a href="#ai_policy_sub1">AI Policy</a>
+                <a href="#ai_policy_sub2">Mobile Policy</a>
+                <a href="#ai_policy_sub3">School policy</a>
+                <!-- Add more dropdown items here -->
+            </div>
+        </li>
         <li><a href="#about">About</a></li>
         <li class="buy-button"><a href="#home">Home</a></li>
 
@@ -72,7 +83,7 @@
     <span class="small-star" data-animation="" style="left: 0px; transform: rotate(-20deg) translate(101px, 165px); --playState: running;"></span>
     <span class="small-star" data-animation="" style="right: 0px; transform: scale(0.8) rotate(20deg) translate(-91px, 200px); --playState: running;"></span>
     <div class="hero">
-      <h1 class="two-lines" style="  font-family: Bebas Neue, sans-serif; letter-spacing: 10px;">Innovation-Technology<span class="small-star" style="   transform: rotate(-20deg) translate(-11px, 1px); --playState: running;"></span></h1>
+      <h1 class="two-lines" style="margin-top: 250px;  font-family: Bebas Neue, sans-serif; letter-spacing: 10px;">Innovation-Technology<span class="small-star" style="   transform: rotate(-20deg) translate(-11px, 1px); --playState: running;"></span></h1>
       <p>
         Council of OIS
       </p>
@@ -86,7 +97,7 @@
 
   <div class="container">
       <div class="row justify-content-center">
-        <div class="col-6" style="max-width: 100%; margin-top: 200px;"> <!-- Increase this value to make the video bigger -->
+        <div class="col-6" style="max-width: 80%; margin-top: 200px;"> <!-- Increase this value to make the video bigger -->
           <div class="embed-responsive embed-responsive-16by9">
             <video id="myVideo" class="embed-responsive-item" autoplay muted>
               <source src="media/Innotech Initiatives.mp4" type="video/mp4">
@@ -134,18 +145,25 @@
     <p class="section-description text-light big-text">
       Welcome to the Innovation Technology Council at OIS. We're dedicated to igniting a passion for technology among students and driving innovation in education.
     </p>
-    <div  class="row align-items-center"> <!-- Add align-items-center here -->
+    <a href="mainabout.html" class="btn btn-primary btn-sm" target="_blank" >
+      Learn More
+  </a>
+
+    <div  class="row align-items-center"> 
+      <!-- Add align-items-center here -->
       <!-- Our Mission Column -->
       <div class="col-md-4 text-md-right">
         <h3 class="subsection-title mt-6 mb-3 big-text" style="color: #3498db;">Our Mission</h3>
         <ul class="list-unstyled mission-list big-text" style="color: #fdfefe;">
-          <li>• Promoting Technological Literacy</li>
-          <li>• Fostering Innovation</li>
-          <li>• Embracing Emerging Technologies</li>
-          <li>• Adding a new point here</li>
+          <li>Promoting Technological Literacy</li>
+          <li>Fostering Innovation</li>
+          <li>Embracing Emerging Technologies</li>
+          
         </ul>
+        
       </div>
-      
+
+    
       <!-- Image Column -->
       <div class="col-md-4 text-center d-none d-md-block" id="bulb">
         <img src="images/bulbon.png" alt="Bulb Image" class="img-fluid mt-md-4 mb-3" id="bulb-img">
@@ -179,9 +197,12 @@
         <ul class="list-unstyled what-we-do-list big-text" style="color: #fdfefe;">
           <li>• Tech Workshops and Seminars</li>
           <li>• Innovation Challenges</li>
-          <li>• STEM Outreach Programs</li>
+          <li>• Steam Outreach Programs</li>
           <li>• Partnerships and Collaborations</li>
         </ul>
+        <a href="subpage.html" class="btn btn-primary btn-sm" target="_blank" >
+          Learn More
+      </a>
       </div>
     </div>
     
@@ -196,6 +217,11 @@
         </ul>
       </div>
     </div>
+
+
+    
+
+
     <div class="sub-explainer"></div>
 
     <h1 class="text-center mt-5" data-aos="zoom-out-down">Testimonials</h1>
@@ -226,7 +252,7 @@
         <h4>Twitter</h4>
       </figcaption>
     </figure>
-    <div id="ai_policy" class="sub-explainer" style="margin-top: 250px;"></div>
+    <div id="ai_policy_sub1" class="sub-explainer" style="margin-top: 250px;"></div>
    
     <div class="container">
       <h1  class="text-center" data-aos="zoom-out-down">AI policy</h1>
@@ -864,6 +890,7 @@
 <script src="js/gsap.min.js"></script>
 
 <script src="js/new.js"></script>
+
 <style type="text/css">.typewrite > .wrap { border-right: 0.08em solid #fff}</style>
 </body>
 </html>
