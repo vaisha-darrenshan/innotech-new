@@ -335,3 +335,41 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+@keyframes text-pop-up-top {
+  0% {
+    background-image: linear-gradient(180deg, #fff 25%, #2d82a4 100%);
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  25% {
+    transform: translateY(-10px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 20px 15px #B5BABE;
+  }
+  50% {
+    transform: translateY(-15px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 20px 15px #B5BABE;
+  }
+  100% {
+    transform: translateY(-15px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 20px 15px #B5BABE;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
