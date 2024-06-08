@@ -81,26 +81,27 @@ body {
   }
   
   #backToTopBtn {
-  
-    position: fixed; /* Fixed/sticky position */
-    bottom: 35px; /* Place the button at the bottom of the page */
-    left: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #7C7C7C; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 17px; /* Some padding */
-    
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    transition: background-color 0.3s ease;
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position to stay visible while scrolling */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px; /* Distance from the right of the viewport */
+    background-color: #3498db; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 50%; /* Round button shape */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 24px; /* Button font size */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    outline: none; /* Remove focus outline */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    z-index: 1000;
   }
   
   #backToTopBtn:hover {
-    background-color: grey; /* Add a dark-grey background on hover */
+    background-color: #2980b9; /* Darker background color on hover */
   }
+  
   .head-leader-card,
 .deputy-head-leader-card {
   border-radius: 15px;

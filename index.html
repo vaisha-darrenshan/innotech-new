@@ -9,6 +9,8 @@
        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+       
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -77,6 +79,10 @@
     </nav>
   </header>
   
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+
   <div class="stars-bg" id="home">
   </div>
   <div class="limited-width">
@@ -84,7 +90,7 @@
     <span class="small-star" data-animation="" style="right: 0px; transform: scale(0.8) rotate(20deg) translate(-91px, 200px); --playState: running;"></span>
     <div class="hero" data-aos="fade-up"
     data-aos-duration="3000" >
-      <h1 data-aos="zoom-out-down" class="two-lines" style="margin-top: 250px;  font-family: Bebas Neue, sans-serif; letter-spacing: 10px;">Innovation-Technology<span class="small-star" style="   transform: rotate(-20deg) translate(-11px, 1px); --playState: running;"></span></h1>
+      <h1 data-aos="zoom-out-down" style="margin-top: 250px;  font-family: Bebas Neue, sans-serif; letter-spacing: 10px; ">Innovation-Technology<span class="small-star" style="   transform: rotate(-20deg) translate(-11px, 1px); --playState: running;"></span></h1>
       <p>
         Council of OIS
       </p>
@@ -96,7 +102,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container"data-aos="fade-up"> 
       <div class="row justify-content-center">
         <div class="col-6" style="max-width: 80%; margin-top: 200px;"> <!-- Increase this value to make the video bigger -->
           <div class="embed-responsive embed-responsive-16by9">
@@ -122,21 +128,18 @@
     </script>
   <section id="about" class="become-a-css-pro explainer"  >
    
-    <div class="limited-width">
-      <h1  style=" font-size: 4em;"  data-aos="zoom-out-down" >Motto</h1>
-      <p class="big-p">
-        <div class="div">
-        <span class="cta-wrapper">
-          <h6 class="button-cta" data-aos="zoom-in-up" >Pioneer Progress, Ignite Change</h6>
-        </span>
-      </div>
-      </p>
+   <div class="limited-width text-center">
+  <h1 style="font-size: 4em;" data-aos="zoom-out-down">Motto</h1>
+  <p class="big-p">
+    <div>
+      <span class="cta-wrapper">
+        <h6 class="button-cta" data-aos="zoom-in-up">Pioneer Progress, Ignite Change</h6>
+      </span>
     </div>
-        <p class="video-desc small-p">
-          
-        </p>
-      
-   <!-- Existing code before the new section -->
+  </p>
+</div>
+
+<!-- Existing code before the new section -->
 <!-- ... -->
 
 <!-- New section with provided code -->
@@ -146,25 +149,19 @@
     <p class="section-description text-light big-text">
       Welcome to the Innovation Technology Council at OIS. We're dedicated to igniting a passion for technology among students and driving innovation in education.
     </p>
-    <a href="mainabout.html" class="btn btn-primary btn-sm" target="_blank" >
-      Learn More
-  </a>
+    <a href="mainabout.html" class="btn btn-primary btn-sm" target="_blank" style="margin-bottom: 20px;">Learn More</a>
 
-    <div  class="row align-items-center"> 
-      <!-- Add align-items-center here -->
+    <div class="row align-items-center vertical-mobile">
       <!-- Our Mission Column -->
-      <div class="col-md-4 text-md-right">
+      <div class="col-md-4 text-md-right text-center">
         <h3 class="subsection-title mt-6 mb-3 big-text" style="color: #3498db;">Our Mission</h3>
         <ul class="list-unstyled mission-list big-text" style="color: #fdfefe;">
           <li>Promoting Technological Literacy</li>
           <li>Fostering Innovation</li>
           <li>Embracing Emerging Technologies</li>
-          
         </ul>
-        
       </div>
 
-    
       <!-- Image Column -->
       <div class="col-md-4 text-center d-none d-md-block" id="bulb">
         <img src="images/bulbon.png" alt="Bulb Image" class="img-fluid mt-md-4 mb-3" id="bulb-img">
@@ -175,25 +172,26 @@
         var controller = new ScrollMagic.Controller();
 
         new ScrollMagic.Scene({
-          triggerElement: '#bulb', // change this to the id of your trigger element
-          triggerHook: 1 // change this to the point at which you want the bulb to turn off (0 is the top of the viewport, 1 is the bottom)
+          triggerElement: '#bulb', 
+          triggerHook: 1
         })
         .on('enter', function () {
-          document.getElementById('bulb-img').src = 'images/bulboff.png'; // change the bulb to the off image
+          document.getElementById('bulb-img').src = 'images/bulboff.png'; 
         })
         .addTo(controller);
 
         new ScrollMagic.Scene({
-          triggerElement: '#bulb', // change this to the id of your trigger element
-          triggerHook: 0.4 // change this to the point at which you want the bulb to turn on (0 is the top of the viewport, 1 is the bottom)
+          triggerElement: '#bulb',
+          triggerHook: 0.4 
         })
         .on('enter', function () {
-          document.getElementById('bulb-img').src = 'images/bulbon.png'; // change the bulb to the on image
+          document.getElementById('bulb-img').src = 'images/bulbon.png'; 
         })
         .addTo(controller);
       </script>
+
       <!-- What We Do Column -->
-      <div class="col-md-4 text-md-left">
+      <div class="col-md-4 text-md-left text-center">
         <h3 class="subsection-title mt-4 mb-3 big-text" style="color: #3498db;">What We Do</h3>
         <ul class="list-unstyled what-we-do-list big-text" style="color: #fdfefe;">
           <li>• Tech Workshops and Seminars</li>
@@ -201,14 +199,12 @@
           <li>• Steam Outreach Programs</li>
           <li>• Partnerships and Collaborations</li>
         </ul>
-        <a href="subpage.html" class="btn btn-primary btn-sm" target="_blank" >
-          Learn More
-      </a>
+        <a href="subpage.html" class="btn btn-primary btn-sm" target="_blank">Learn More</a>
       </div>
     </div>
-    
+
     <!-- Get Involved Column -->
-    <div class="row mt-4 justify-content-center"> <!-- Add justify-content-center here -->
+    <div class="row mt-4 justify-content-center">
       <div class="col-md-6 text-center">
         <h3 class="subsection-title mt-4 mb-3 big-text" style="color: #3498db;">Get Involved</h3>
         <ul class="list-unstyled get-involved-list big-text" style="color: #FDFEFE;">
@@ -218,6 +214,8 @@
         </ul>
       </div>
     </div>
+  </div>
+</section>
 
 
     
@@ -880,7 +878,7 @@
       updateStyleVariables()
     })
   </script>
-             
+             <script src="js/main.js"></script>
              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
              <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
