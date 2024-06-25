@@ -58,19 +58,33 @@
   </head>
   <body>
     
-    <header data-aos="fade-down">
-      <nav style="display: flex; justify-content: center; align-items: center;">
-        <ul style="list-style: none; display: flex; gap: 20px;">
-          <li>
-            <a href="javascript:history.back()" style="transform: scale(1.5);">&#10558;</a>
-          </li>
-          <li class="buy-button">
-            <a href="#home">Councils</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+              <a class="navbar-brand" href="#">
+                  <img src="images/skl.png" alt="School_logo" class="logo-img" style="width: 225px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="javascript:history.back()">Back</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#home">Councils</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
     <script>
       function goBack() {
         window.history.back();
@@ -98,37 +112,31 @@
     
     <section id="councils">
       <div class="container" style="margin-top: 150px;">
-        <h1 data-aos="fade-up" class="text-center mb-4" >Council Navigation</h1>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <a href="#council1" class="btn btn-outline-primary btn-block btn-sm best-btn">Media and PR</a>
-            <a href="#council2" class="btn btn-outline-primary btn-block btn-sm best-btn">Literary</a>
-            <a href="#council3" class="btn btn-outline-primary btn-block btn-sm best-btn">well-being</a>
-            <a href="#council4" class="btn btn-outline-primary btn-block btn-sm best-btn">Academic</a>
-            <a href="#council5" class="btn btn-outline-primary btn-block btn-sm best-btn">Inno-Tech</a>
+        <h1 data-aos="fade-up" class="text-center mb-4">Council Navigation</h1>
+        <div class="row d-flex flex-column flex-lg-row">
+          <div class="col-md-4 mb-3 d-flex flex-column">
+            <a href="#council1" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Media and PR</a>
+            <a href="#council2" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Literary</a>
+            <a href="#council3" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Well-being</a>
+            <a href="#council4" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Academic</a>
+            <a href="#council5" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Inno-Tech</a>
           </div>
-          <div class="col-md-4 mb-3">
-            
-           
-            <a href="#council6"  class="btn btn-outline-primary btn-block btn-sm best-btn">Discipline</a>
-            <a href="#council8" class="btn btn-outline-primary btn-block btn-sm best-btn">Cultural</a>
-            <a href="#council7" class="btn btn-outline-primary btn-block btn-sm best-btn">Environment</a>
+          <div class="col-md-4 mb-3 d-flex flex-column">
+            <a href="#council6" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Discipline</a>
+            <a href="#council8" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Cultural</a>
+            <a href="#council7" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Environment</a>
           </div>
-        
-          <div class="col-md-4 mb-3">
-            <a href="#council9" class="btn btn-outline-primary btn-block btn-sm best-btn">Sports</a>
-            <a href="#council10"class="btn btn-outline-primary btn-block btn-sm best-btn">Aquarius</a>
-            <a href="#council11" class="btn btn-outline-primary btn-block btn-sm best-btn">Leo</a>
-            <a href="#council12"class="btn btn-outline-primary btn-block btn-sm best-btn">Aries</a>
-            <a href="#council13" class="btn btn-outline-primary btn-block btn-sm best-btn">Taurus</a>
-          </div>
-          
-          
-          
+          <div class="col-md-4 mb-3 d-flex flex-column">
+            <a href="#council9" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Sports</a>
+            <a href="#council10" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Aquarius</a>
+            <a href="#council11" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Leo</a>
+            <a href="#council12" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Aries</a>
+            <a href="#council13" class="btn btn-outline-primary btn-block btn-sm best-btn mb-2">Taurus</a>
           </div>
         </div>
       </div>
     </section>
+    
     <div  class="sub-explainer"  style="margin-top: 75px;" ></div>
 
     <section id="top-leaders " data-aos="zoom-out">
@@ -704,7 +712,7 @@
           <!-- Secretary 2 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
             <div class="card h-100">
-              <img src="photos/drv1.png" class="card-img-top" alt="Secretary 2">
+              <img src="images/secs/hessah-inno.jpg" class="card-img-top" alt="Secretary 2">
               <div class="card-body">
                 <h6 class="card-title">Secretary</h6>
                 <p class="card-text">Hessah Sadath</p>
@@ -743,7 +751,7 @@
           <!-- Council Member 1 -->
           <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
             <div class="card h-100">
-              <img src="photos/drv1.png" class="card-img-top" alt="Council Member 1">
+              <img src="images/members/vaish-inno.jpg" class="card-img-top" alt="Council Member 1">
               <div class="card-body">
                 <h6 class="card-title">Council Member </h6>
                 <p class="card-text">Vaishal</p>
