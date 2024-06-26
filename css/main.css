@@ -13,6 +13,56 @@ body {
   background-color: #252528;
 
 }
+
+.footer {
+  background-color: #343a40; /* Darker shade for more depth */
+  color: #f8f9fa; /* Lighter text for better contrast */
+}
+
+.footer h5 {
+  color: #ffc107; /* A brighter color for headings */
+  margin-bottom: 15px; /* Add some space below the heading */
+}
+
+.footer a {
+  color: #f8f9fa; /* Ensure links are also light for contrast */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+  color: #ffc107; /* Highlight links on hover for interactivity */
+}
+
+.container {
+  max-width: 1140px; /* Adjust container width if necessary */
+  padding: 0 15px; /* Add some padding */
+  margin: auto; /* Center the container */
+}
+
+.row {
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically */
+}
+
+.col-md-6, .col-12 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: start; /* Align items to the start */
+}
+
+.col-12 {
+  align-items: center; /* Center-align for the copyright text */
+  margin-top: 20px; /* Add some space above */
+}
+
+@media (max-width: 768px) {
+  .row, .col-md-6, .col-12 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .bg {
   background-image: url(images/blank-black-wavy-paper-background.jpg) ;
   background-repeat: no-repeat;
@@ -399,7 +449,7 @@ header {
     }
   }
   .navbar {
-    
+  
     backdrop-filter: blur(5px);
     background-color: rgba(11, 17, 23, 0.8); /* #0b1117 with 80% opacity */
     box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,0.1);
