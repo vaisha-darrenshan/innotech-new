@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Julius+Sans+One&family=Jura:wght@300..700&display=swap');
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Default styles for the cards */
+
+
+/* Adjustments for screens 425px and below */
+@media (max-width: 425px) {
+  .card {
+    max-width: 90%;
+    padding: 0.5rem;  /* Reduce padding */
+    font-size: 0.875rem;  /* Optional: reduce font size if needed */
+  }
+}
+
+/* Adjustments for small screens (up to 767.98px) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #councils .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #councils .btn {
+    font-size: 0.9rem; /* Adjust font size if needed */
+    padding: 0.5rem 0.75rem; /* Adjust padding if needed */
+  }
+}
+
+.card {
+    background: rgb(37,37,40);
+    background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(45,34,1,1) 15%, rgba(179,117,11,1) 72%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-family: "Jura", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white
+    
+}
+
+.card-text {
+    font-size: 1em;
+    color: whitesmoke;
+}
+
+.card-deck .card {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* same as non-hover state */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* same as non-hover state */
+    transform: none; /* no scaling or other transformations */
+}
+
+/* Button styles */
+/* Button styles */
+.best-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .best-btn:hover {
+    background-color: #111;
+  }
+  
+  #backToTopBtn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position to stay visible while scrolling */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px; /* Distance from the right of the viewport */
+    background-color: #3498db; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 50%; /* Round button shape */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 24px; /* Button font size */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    outline: none; /* Remove focus outline */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    z-index: 1000;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #2980b9; /* Darker background color on hover */
+  }
+  
+  .head-leader-card,
+.deputy-head-leader-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.head-leader-card:hover,
+.deputy-head-leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.head-leader-img,
+.deputy-head-leader-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.head-leader-card:hover .head-leader-img,
+.deputy-head-leader-card:hover .deputy-head-leader-img {
+  transform: scale(1.05);
+}
+
+.head-leader-details,
+.deputy-head-leader-details {
+  background: linear-gradient(135deg, #f0e68c, #e6e6fa);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.head-leader-title,
+.deputy-head-leader-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #222;
+}
+
+.head-leader-text,
+.deputy-head-leader-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#top-leaders {
+  margin-bottom: 50px;
+}
+#council2 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(20,0,0,1) 15%, rgba(179,30,11,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#council2 .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#council3 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(112,11,179,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#council3 .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#council4 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(195,175,94,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#council4 .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#council6 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(200,199,199,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#council7 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(101,184,98,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#council7 .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#council8 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(156,83,0,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#council8 .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#council5 .card {
+  background: rgb(37,37,40);
+background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(12,95,147,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#council9 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(93,12,147,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#council10 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(0,71,247,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#council12 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(93,190,0,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#council13 .card {
+  background: rgb(37,37,40);
+  background: linear-gradient(0deg, rgba(37,37,40,1) 0%, rgba(0,0,0,1) 15%, rgba(190,0,0,1) 72%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.head-leader-card, .deputy-head-leader-card {
+  width: 80%; /* Adjust this value to make the card smaller */
+  margin: auto; /* Center the card */
+}
